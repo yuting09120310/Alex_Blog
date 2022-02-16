@@ -16,6 +16,12 @@ let data = [
         img:"./images/ubike_map/photo.png",
         content:"查詢ubike1.0 2.0站點位置",
         link:"https://yuting09120310.github.io/ubike_map/"
+    },
+    {
+        title:"TodoList",
+        img:"./images/todolist/photo.png",
+        content:"利用基礎的vue+js 寫出一個Todolist",
+        link:"https://yuting09120310.github.io/todolist/"
     }
 ]
 
