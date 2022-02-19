@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ALEX的作品集-記帳程式</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">ALEX的作品集</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">首頁</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>記帳程式</h2>
+								<p>這幾個月來常常錢不知道花去哪裡，才下定決定要來養成記帳的好習慣。<br>
+								   但用手寫下來帳目，個人覺得好麻煩，且常常把帳本放到不見，所以才決定來寫這套軟體...這篇順便來當作紀錄~
+								   程式語言:C# <br>
+								   資料庫:MySQL <br>
+								   NuGet額外套件:MySql.Data , Guna(外觀較好看)<br><br>
+
+								   首先是登入的部分~<br>
+								   (原因是要把使用者權限做分開,像是管理員就能刪除歷史的紀錄，一般使用者無法做到)<br>
+								   <img src="./images/記帳圖/login.png" alt="" srcset=""><br>
+								   按下登入後 會連接到資料庫判斷密碼存不存在(順便帶出使用者的名字) <br><br>
+								   
+								   登入成功後，會顯示該使用者的帳戶有哪些銀行以及金錢(如下)<br>
+								   <img src="./images/記帳圖/photo1.png" alt="" srcset=""><br>
+								   <img src="./images/記帳圖/photo2.png" alt="" srcset=""><br><br>
+								   大致功能都已完成， 也做了一些防呆功能~<br>
+								   (防呆舉例:我常常把事項跟金額寫反XD，會造成錯誤)<br>
+								   未來會將資料庫用Docker打包起來發到github讓大家使用:D
+								</p>
+							</div>
+						</header>
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">聯絡我</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>
+								<li class="icon solid fa-phone">(000) 000-0000</li>
+								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,5 +1,11 @@
 let data = [
     {
+        title:"記帳軟體",
+        img:"./images/記帳圖/photo1.png",
+        content:"用C# + Mysql 寫出記帳軟體~(含心得)",
+        link:"./home_account.html"
+    },
+    {
         title:"線上聊天室",
         img:"./images/chatroom/photo.png",
         content:"利用vue + firebase達到聊天室的效果",
