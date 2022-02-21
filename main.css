@@ -1,5 +1,14 @@
+/* 電腦版 */
 @media screen and (min-width: 1366px){
     #four img{
         height: 280px;
+    }
+}
+
+
+/* 手機板 */
+@media screen and (max-width: 1366px){
+    img{
+        width: 80vw;
     }
 }
