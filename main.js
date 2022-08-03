@@ -47,11 +47,14 @@ let app = Vue.createApp({
         sendEmail(){
             axios.post("https://blogemail.herokuapp.com/",{"title": this.custEmail,"content": this.custContent})
             .then(res => {
-                alert(res)
+                alert(res.data)
             })
             .catch(err => {
                 console.error(err); 
             })
+
+            this.custEmail = "";
+            this.custContent = ""
         }
     },
     mounted() {
