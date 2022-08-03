@@ -33,17 +33,30 @@ let data = [
 
 let app = Vue.createApp({
     data(){
-        let data2=[]
+        let data2=[];
+        let custEmail;
+        let custContent;
+        
         return{
-            data2 : data
+            data2 : data,
+            custEmail,
+            custContent
         }
     },
     methods: {
-        
+        sendEmail(){
+            axios.post("https://blogemail.herokuapp.com/",{"title": this.custEmail,"content": this.custContent})
+            .then(res => {
+                alert(res)
+            })
+            .catch(err => {
+                console.error(err); 
+            })
+        }
     },
     mounted() {
         
     },
 })
 
-app.mount('#wrapper');
+app.mount('#page-wrapper');
